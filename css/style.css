@@ -15,3 +15,9 @@ h2 {
 p {
     font-size: 15px;
 }
+img {
+    position: fixed;
+    bottom: 10%;
+    right:15%;
+    height: 75%;
+}
