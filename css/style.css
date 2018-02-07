@@ -1,0 +1,17 @@
+html {
+    height: 100%;
+}
+
+body {
+    width: 800px;
+    height: 100%;
+    background-color: #fafce3
+}
+
+h2 {
+    font-size: 20px;
+    width: 150px  
+}
+p {
+    font-size: 15px;
+}
