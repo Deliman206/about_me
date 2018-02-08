@@ -6,8 +6,8 @@ body {
     width: 1000px;
     height: 100%;
     background-color: #fafce3;
-    background-image: img(bkgndImage.jpg);
 }
+
 ol{
     list-style-type: decimal;
     margin-right: 10px;
