@@ -3,21 +3,28 @@ html {
 }
 
 body {
-    width: 800px;
+    width: 1000px;
     height: 100%;
-    background-color: #fafce3
+    background-color: #fafce3;
+    background-image: img(bkgndImage.jpg);
 }
-
+ol{
+    list-style-type: decimal;
+    margin-right: 10px;
+    display: inline-block;
+}
 h2 {
     font-size: 20px;
-    width: 150px  
+    width: 150px 
 }
 p {
     font-size: 15px;
+    width: 500px;
+    display: inline-block;
 }
-img {
-    position: fixed;
-    bottom: 10%;
-    right:15%;
+img{
+    float: right;
+    margin-right: 10px;
     height: 75%;
+    display: inline-block;
 }
