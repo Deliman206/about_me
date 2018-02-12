@@ -86,8 +86,8 @@ function game3() {
   }
 }
 
-// game1();
-// game2();
-// game3();
+game1();
+game2();
+game3();
 
 alert('OK ' + userName + ' the game is over. You got ' + correctCount + ' questions correct! Enjoy my page now.');
