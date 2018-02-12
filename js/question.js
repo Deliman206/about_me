@@ -1,4 +1,4 @@
-
+'use strict';
 
 var questions =['Am I a human?','Do I have a cat?', 'Was I born in California?','Do I even code, brah?!','Can I drive a car?'];
 var answers = ['yes','no','no','yes','yes'];
@@ -32,8 +32,8 @@ function game1() {
 }
 
 function game2() {
-  alert('Ok '+ userName + '. Now You will have to guess my favorite number.');
-  var nums = [Math.floor(Math.random()*100)];
+  alert('Ok '+ userName + '. Now You will have to guess my favorite number. Hint: it is between 0 and 10.');
+  var nums = [Math.floor(Math.random()*11)];
   var myNum = nums[0];
 
   for(var i = 1; i < 5; i++){
@@ -71,10 +71,11 @@ function game2() {
 function game3() {
   var favBeer = ['rainier','aslan','georgetown'];
   var count = 0;
-  while(count < 7){
+  for ( var i= 0; i <6; i++){
     var guessBeer = prompt('What are my favorite beer companies?').toLowerCase().trim();
-    if( guessBeer === favBeer[0] || guessBeer === favBeer[1] || guessBeer === favBeer[2] ){
-      alert('You guessed right! My favorite companies are '+ favBeer[0]+ ', '+favBeer[1]+ ',and '+favBeer[2]+'.');
+    count++;
+    if( favBeer.includes(guessBeer)){
+      alert('You guessed right! My favorite companies are ' + favBeer + '.');
       correctCount++;
       break;
     }
@@ -82,12 +83,11 @@ function game3() {
       alert('You Lose! My favorite companies are '+ favBeer[0]+ ', '+favBeer[1]+ ',and '+favBeer[2]+'.');
       break;
     }
-    count++;
   }
 }
 
-game1();
-game2();
-game3();
+// game1();
+// game2();
+// game3();
 
 alert('OK ' + userName + ' the game is over. You got ' + correctCount + ' questions correct! Enjoy my page now.');
