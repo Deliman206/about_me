@@ -1,3 +1,3 @@
 # Deliman FTW
 
-Yo dude, I fixed your codez
+Observer/Navigator: Scott T, Sean M.
