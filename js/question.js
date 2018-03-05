@@ -17,17 +17,24 @@ function game1() {
     }
     var guess = prompt(questions[i]).toLowerCase().trim();
     responses.push(guess);
+    console.log('the question was '+questions[i]+'. And the guess was '+guess+'.');
 
     if ( guess !== 'yes' && guess !== 'no'){
       alert('You broke the rules! Try again.');
       responses.pop(responses[i]);
       i--;
+      console.log('Their answer was not correct format!');
       continue;
     }
     if( guess === answers[i]){
+      console.log("Correct guess!")
+      alert('Correct!');
       correctCount++;
     }
-
+    if (guess !== answers[i]){
+      console.log('They got it wrong');
+      alert('Wrong!');
+    }
   }
 }
 
@@ -37,8 +44,6 @@ function game2() {
   var myNum = nums[0];
 
   for(var i = 1; i < 5; i++){
-    console.log(nums);
-    console.log(nums[i]);
     if (nums.length === 5){
       alert('You Lose!! My favorite number is ' + myNum + '.');
       break;
@@ -49,8 +54,6 @@ function game2() {
     if (guessNum !== parseInt(guessNum)){
       alert('You did not select a number. Try again.');
       nums.pop(nums[i]);
-      console.log(nums);
-      console.log(i);
       continue;
     }
     if (guessNum === myNum){
@@ -74,13 +77,18 @@ function game3() {
   for ( var i= 0; i <6; i++){
     var guessBeer = prompt('What are my favorite beer companies?').toLowerCase().trim();
     count++;
+    if (!favBeer.includes(guessBeer)){
+      alert('Wrong. Try again.');
+      console.log("They guessed wrong");
+    }
     if( favBeer.includes(guessBeer)){
       alert('You guessed right! My favorite companies are ' + favBeer + '.');
       correctCount++;
+      console.log('They got a correct guess!')
       break;
     }
     if ( count === 6){
-      alert('You Lose! My favorite companies are '+ favBeer[0]+ ', '+favBeer[1]+ ',and '+favBeer[2]+'.');
+      alert('You were wronng! My favorite companies are '+ favBeer[0]+ ', '+favBeer[1]+ ',and '+favBeer[2]+'.');
       break;
     }
   }

@@ -1,48 +1,41 @@
-html {
-    height: 100%;
+body{
+  width:1000px;
+  height:100%;
+  padding-left:5%;
+  background-image: url('../img/download.jpeg');
+
+}
+header img{
+  float:left;
+  height:300px;
+}
+header{
+  text-align: center; 
+}
+header h1{
+  padding-top:10%;
 }
 
-body {
-    width: 1000px;
-    height: 100%;
-    background-color: #fafce3;
+section{
+  margin:0px auto;
+  display: inline-block;
+  float:left;
+  margin-left: 3px;
+  margin-top:10px;
+  border:solid;
+  padding:1%;
 }
+section p{
+  width:300px;
+  color: rgb(99, 17, 85);
 
+}
+#movies img{
+  float: left;
+  width:20%;
+  height:20%;
+}
 ol{
-    list-style-type: decimal;
-    margin-right: 10px;
-    margin-left: 10px;
-    display: inline-block;
-}
-h2 {
-    font-size: 20px;
-    width: 150px 
-}
-p {
-    font-size: 15px;
-    width: 500px;
-    display: inline-block;
-}
-img{
-    float: right;
-    margin-left: 100px;
-    height: 75%;
-    display: inline-block;
-}
-#img1{
-    float:left;
-    margin-left:10px;
-    margin-right: 10px;
-    height: 25%;
-    display: inline-block;
-}
-#hobby{
-    display: inline-block;
-    width: 100px;
-    margin-left: 300px;
-}
-#education{
-    display: inline-block;
-    width: 200px;
-    margin-right: 10px;
+  display:inline-block;
+  color: rgb(99,17,85);
 }
